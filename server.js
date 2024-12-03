@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb+srv://aman:Vina@0827@crud.paxhz.mongodb.net/Data?retryWrites=true&w=majority');
+  await mongoose.connect('mongodb://127.0.0.1:27017/test');
   console.log("db connect")
 }
 const userSchema = new mongoose.Schema({
